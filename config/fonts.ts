@@ -1,11 +1,12 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import { Poppins, Open_Sans as OpenSans } from "next/font/google";
 
-export const fontSans = FontSans({
+export const fontSans = OpenSans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-app-sans",
 });
 
-export const fontMono = FontMono({
+export const fontHeading = Poppins({
   subsets: ["latin"],
-  variable: "--font-mono",
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-app-heading",
 });

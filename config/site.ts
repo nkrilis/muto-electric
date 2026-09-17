@@ -2,76 +2,35 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Muto Electric",
-  description: "Your Trusted Local Electrician for All Your Electrical Needs!",
+  shortName: "Muto Electric",
+  tagline: "Vaughan & Toronto's Trusted Electrician",
+  description:
+    "Muto Electric provides licensed residential and commercial electrical services across Vaughan, Toronto, and the GTA — panel upgrades, EV charger installs, pot lights, wiring, and more.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.mutoelectric.ca",
+  phone: "(647) 333-7383",
+  phoneHref: "tel:+16473337383",
+  smsHref: "sms:+16473337383",
+  serviceArea: "Vaughan, Toronto & the GTA",
+  serviceAreaCities: [
+    "Vaughan",
+    "Toronto",
+    "Woodbridge",
+    "Maple",
+    "Richmond Hill",
+    "Thornhill",
+    "Markham",
+    "King City",
+  ],
   navItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    // {
-    //   label: "Docs",
-    //   href: "/docs",
-    // },
-    // {
-    //   label: "Pricing",
-    //   href: "/pricing",
-    // },
-    // {
-    //   label: "Blog",
-    //   href: "/blog",
-    // },
-    {
-      label: "About",
-      href: "/about",
-    },
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ],
   navMenuItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
-    // {
-    //   label: "Profile",
-    //   href: "/profile",
-    // },
-    // {
-    //   label: "Dashboard",
-    //   href: "/dashboard",
-    // },
-    // {
-    //   label: "Projects",
-    //   href: "/projects",
-    // },
-    // {
-    //   label: "Team",
-    //   href: "/team",
-    // },
-    // {
-    //   label: "Calendar",
-    //   href: "/calendar",
-    // },
-    // {
-    //   label: "Settings",
-    //   href: "/settings",
-    // },
-    // {
-    //   label: "Help & Feedback",
-    //   href: "/help-feedback",
-    // },
-    // {
-    //   label: "Logout",
-    //   href: "/logout",
-    // },
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ],
-  links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
-  },
 };

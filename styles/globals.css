@@ -1,3 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "../hero.ts";
+@source "../node_modules/@heroui/theme/dist/**/*.{js,mjs}";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-app-sans);
+  --font-heading: var(--font-app-heading);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), var(--font-sans), sans-serif;
+}
+
+::selection {
+  background-color: #ED1C24;
+  color: #FFFFFF;
+}
