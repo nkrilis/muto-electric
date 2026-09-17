@@ -1,4 +1,4 @@
-const basePath = "/muto-electric-website";
+const basePath = "/muto-electric";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
