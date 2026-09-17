@@ -12,6 +12,8 @@ export const siteConfig = {
   phone: "(647) 333-7383",
   phoneHref: "tel:+16473337383",
   smsHref: "sms:+16473337383",
+  googlePlacesApiKey: process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY || "",
+  googlePlaceId: process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "",
   serviceArea: "Vaughan, Toronto & the GTA",
   serviceAreaCities: [
     "Vaughan",

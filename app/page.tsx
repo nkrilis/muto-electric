@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import { siteConfig } from "@/config/site";
 import { services } from "@/config/services";
 import { ArrowRightIcon, CheckCircleIcon, PhoneIcon } from "@/components/icons";
+import { Testimonials } from "@/components/testimonials";
 
 import logo from "../public/images/logo-white.svg";
 
@@ -169,6 +170,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       {/* CTA */}
       <section className="bg-primary-400">
