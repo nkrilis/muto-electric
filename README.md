@@ -1,53 +1,23 @@
-# Next.js & HeroUI Template
+# Muto Electric
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+Marketing website for Muto Electric, a residential and commercial electrical contractor serving Vaughan, Toronto, and the GTA.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+Built with [Next.js](https://nextjs.org/docs/getting-started) (app directory), [HeroUI](https://heroui.com/), and [Tailwind CSS](https://tailwindcss.com/).
 
-## Technologies Used
-
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
-
-## How to Use
-
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
-
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+## Development
 
 ```bash
 npm install
-```
-
-### Run the development server
-
-```bash
 npm run dev
 ```
 
-### Setup pnpm (optional)
+## Environment variables
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+- `NEXT_PUBLIC_SITE_URL` — the production URL of the site, used for SEO metadata, the sitemap, and robots.txt. Defaults to `https://www.mutoelectric.ca` if unset.
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
+## Structure
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+- `app/` — routes (home, services, service detail pages, about, contact)
+- `config/site.ts` — business info (name, phone, service area, nav links)
+- `config/services.ts` — the list of services and their detail-page content
+- `components/` — navbar, footer, and icon components
