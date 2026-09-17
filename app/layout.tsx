@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     "pot lights",
   ],
   icons: {
-    icon: "/favicon.ico",
-    apple: "/images/logo.png",
+    icon: `${siteConfig.url}/favicon.ico`,
+    apple: `${siteConfig.url}/images/logo.png`,
   },
   openGraph: {
     type: "website",
@@ -35,13 +35,15 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: [{ url: "/images/logo.png", width: 525, height: 475 }],
+    images: [
+      { url: `${siteConfig.url}/images/logo.png`, width: 525, height: 475 },
+    ],
   },
   twitter: {
     card: "summary",
     title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ["/images/logo.png"],
+    images: [`${siteConfig.url}/images/logo.png`],
   },
 };
 

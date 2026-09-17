@@ -6,7 +6,9 @@ export const siteConfig = {
   tagline: "Vaughan & Toronto's Trusted Electrician",
   description:
     "Muto Electric provides licensed residential and commercial electrical services across Vaughan, Toronto, and the GTA — panel upgrades, EV charger installs, pot lights, wiring, and more.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.mutoelectric.ca",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://nkrilis.github.io/muto-electric-website",
   phone: "(647) 333-7383",
   phoneHref: "tel:+16473337383",
   smsHref: "sms:+16473337383",

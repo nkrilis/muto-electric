@@ -3,6 +3,8 @@ import { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { services } from "@/config/services";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/services", "/about", "/contact"].map((route) => ({
     url: `${siteConfig.url}${route}`,
