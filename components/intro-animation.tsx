@@ -150,8 +150,9 @@ export const IntroAnimation = () => {
             d={BOLT_PATH}
             initial={{ pathLength: 0 }}
             stroke="#ED1C24"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            strokeLinecap="square"
+            strokeLinejoin="miter"
+            strokeMiterlimit={12}
             strokeWidth={22}
             style={{
               filter:
