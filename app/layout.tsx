@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { fontHeading, fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { IntroAnimation } from "@/components/intro-animation";
 
 import { Providers } from "./providers";
 
@@ -87,6 +88,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <IntroAnimation />
         <Providers>
           <div className="relative flex flex-col min-h-screen">
             <Navbar />
