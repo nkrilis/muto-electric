@@ -106,3 +106,35 @@ export const MoonIcon = (props: IconSvgProps) => (
     <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" />
   </svg>
 );
+
+export const StarIcon = (props: IconSvgProps) => (
+  <svg {...base(props)} fill="currentColor" stroke="none" {...props}>
+    <path d="M12 2.5 15 9l7 1-5.2 4.9L18.2 22 12 18.3 5.8 22l1.4-7.1L2 10l7-1 3-6.5Z" />
+  </svg>
+);
+
+export const GoogleIcon = (props: IconSvgProps) => (
+  <svg
+    height={props.size || props.height || 24}
+    viewBox="0 0 24 24"
+    width={props.size || props.width || 24}
+    {...props}
+  >
+    <path
+      d="M23.5 12.3c0-.85-.08-1.66-.22-2.45H12v4.63h6.46a5.52 5.52 0 0 1-2.4 3.62v3h3.87c2.27-2.09 3.57-5.17 3.57-8.8Z"
+      fill="#4285F4"
+    />
+    <path
+      d="M12 24c3.24 0 5.96-1.07 7.94-2.9l-3.87-3c-1.08.72-2.46 1.15-4.07 1.15-3.13 0-5.78-2.11-6.73-4.96H1.27v3.1A12 12 0 0 0 12 24Z"
+      fill="#34A853"
+    />
+    <path
+      d="M5.27 14.29a7.2 7.2 0 0 1 0-4.58v-3.1H1.27a12 12 0 0 0 0 10.78l4-3.1Z"
+      fill="#FBBC05"
+    />
+    <path
+      d="M12 4.75c1.76 0 3.34.6 4.58 1.79l3.44-3.44C17.95 1.19 15.24 0 12 0A12 12 0 0 0 1.27 6.61l4 3.1C6.22 6.86 8.87 4.75 12 4.75Z"
+      fill="#EA4335"
+    />
+  </svg>
+);
